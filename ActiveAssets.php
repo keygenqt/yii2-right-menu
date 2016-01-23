@@ -9,13 +9,13 @@ use \yii\web\AssetBundle;
  */
 class ActiveAssets extends AssetBundle
 {
-	public $sourcePath = '@keygenqt/imageAjax/assets';
+	public $sourcePath = '@keygenqt/rightMenu/assets';
 
 	public $js = [
-		'js/dropzone.js',
+		'js/temp.js',
 	];
 
 	public $css = [
-		'css/yii2-image-ajax.css'
+		'css/yii2-right-menu.css'
 	];
 }
