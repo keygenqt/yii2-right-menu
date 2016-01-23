@@ -1,6 +1,8 @@
 yii2-right-menu
 ===================
 
+Menu takes a small amount of space with a comfortable functional. I made for my the admin panel on yii2.
+
 ## Installation
 
 The preferred way to install this extension is through [composer](http://getcomposer.org/download/).
