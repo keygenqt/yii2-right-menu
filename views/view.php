@@ -1,7 +1,65 @@
 <?php
-    /* @var keygenqt\rightMenu\rightMenu $widget */
+    /* @var $widget keygenqt\rightMenu\RightMenu */
+    use \yii\helpers\Html;
 ?>
 
-<div class="yii2-right-menu">
+<style>
+    .right-menu {
+        left: -<?= $widget->width - 75; ?>px;
+        width: <?= $widget->width; ?>px;
+    }
+    @keyframes right-menu-close {
+        0% { left: -<?= $widget->width - 75; ?>px; }
+        100% { left: 0; }
+    }
+    @keyframes right-menu-open {
+        0% { left: 0; }
+        100% { left: -<?= $widget->width - 75; ?>px; }
+    }
+    .right-menu-close { left: -<?= $widget->width - 75; ?>px; }
+    .right-menu-open { left: 0; }
+</style>
 
+<div class="right-menu">
+    <div class="header-menu-right">
+        <div><?= $widget->title ?></div>
+        <div><?= $widget->subtitle ?></div>
+    </div>
+    <div class="right-menu-block">
+        <div class="right-menu-hide">
+            <?= \yii\widgets\Menu::widget([
+                'options' => [
+                    'class' => 'right-menu-ul'
+                ],
+                'items' => $widget->items,
+            ]); ?>
+        </div>
+
+        <div class="right-menu-show">
+            <ul>
+                <li id="menu-right-show">
+                    <i class="fa fa-bars"></i>
+                </li>
+            </ul>
+            <ul>
+                <li id="menu-right-up">
+                    <i class="fa fa-chevron-up"></i>
+                </li>
+            </ul>
+            
+            <?php if (!empty($widget->itemsFront)): ?>
+                <ul>
+                    <?php
+                        foreach ($widget->itemsFront as $item) {
+                            if (isset($item['url'])) {
+                                echo Html::a(Html::tag('li', Html::tag('i', '', ['class' => $item['icon']]), $item['options']), $item['url'], $item['optionsLink']);
+                            } else {
+                                echo Html::tag('li', Html::tag('i', '', ['class' => $item['icon']]), $item['options']);
+                            }
+                        }
+                    ?>
+                </ul>
+            <?php endif; ?>
+        </div>
+    </div>
 </div>

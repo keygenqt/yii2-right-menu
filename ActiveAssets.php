@@ -12,7 +12,7 @@ class ActiveAssets extends AssetBundle
 	public $sourcePath = '@keygenqt/rightMenu/assets';
 
 	public $js = [
-		'js/temp.js',
+		'js/yii2-right-menu.js'
 	];
 
 	public $css = [
