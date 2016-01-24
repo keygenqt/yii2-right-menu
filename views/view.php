@@ -18,10 +18,20 @@
     }
     .right-menu-close { left: -<?= $widget->width - 75; ?>px; }
     .right-menu-open { left: 0; }
+    
+    <?php if (!empty($widget->titleUrl)): ?>
+        .header-menu-right {
+            cursor: pointer;
+        }
+    <?php endif; ?>
 </style>
 
 <div class="right-menu">
-    <div class="header-menu-right">
+    <div class="header-menu-right"
+        <?php if (!empty($widget->titleUrl)): ?>
+            onclick="window.location.href='<?= \yii\helpers\Url::toRoute($widget->titleUrl) ?>'"
+        <?php endif; ?>
+    >
         <div><?= $widget->title ?></div>
         <div><?= $widget->subtitle ?></div>
     </div>

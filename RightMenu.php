@@ -4,6 +4,7 @@ namespace keygenqt\rightMenu;
 
 class RightMenu extends \yii\widgets\Menu
 {
+    public $titleUrl = [];
     public $itemsFront = [];
     public $up = true;
     public $title;
