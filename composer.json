@@ -1,8 +1,8 @@
 {
-  "name": "keygenqt/yii2-right-menu",
+  "name": "keygenqt/yii2-vertical-menu",
   "description": "Widget from form image ajax load.",
   "keywords": ["yii2", "extension", "widget", "menu", "plugin"],
-  "homepage": "https://github.com/keygenqt/yii2-right-menu",
+  "homepage": "https://github.com/keygenqt/yii2-vertical-menu",
   "type": "yii2-extension",
   "license": "BSD-3-Clause",
   "version":"0.5.0",
@@ -21,7 +21,7 @@
   },
   "autoload": {
     "psr-4": {
-      "keygenqt\\rightMenu\\": ""
+      "keygenqt\\verticalMenu\\": ""
     }
   }
 }

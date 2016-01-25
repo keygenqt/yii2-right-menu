@@ -1,4 +1,4 @@
-yii2-right-menu
+yii2-vertical-menu
 ===================
 
 Menu takes a small amount of space with a comfortable functional. Made for my the admin panel on yii2.
@@ -11,12 +11,12 @@ Either add
 
 ```
 "require": {
-    "keygenqt/yii2-right-menu": "*"
+    "keygenqt/yii2-vertical-menu": "*"
 },
 "repositories":[
     {
         "type": "git",
-        "url": "https://github.com/keygenqt/yii2-right-menu.git"
+        "url": "https://github.com/keygenqt/yii2-vertical-menu.git"
     }
 ]
 ```

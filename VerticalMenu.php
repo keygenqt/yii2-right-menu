@@ -1,8 +1,8 @@
 <?php
 
-namespace keygenqt\rightMenu;
+namespace keygenqt\verticalMenu;
 
-class RightMenu extends \yii\widgets\Menu
+class VerticalMenu extends \yii\widgets\Menu
 {
     public $titleUrl = [];
     public $itemsFront = [];

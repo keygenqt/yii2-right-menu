@@ -1,6 +1,6 @@
 <?php
 
-namespace keygenqt\rightMenu;
+namespace keygenqt\verticalMenu;
 
 use \yii\web\AssetBundle;
 
