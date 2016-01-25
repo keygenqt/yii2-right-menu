@@ -261,7 +261,7 @@ ul.vertical-menu-ul {
 .vertical-menu-ul ul li:first-child a {
 	border-top: 5px solid #3d0047;
 }
-a[href="#"]:before { 
+.vertical-menu-ul  a[href="#"]:before { 
     content: "\f0dd";
     display: inline-block;
     font: normal normal normal 14px/1 FontAwesome;
