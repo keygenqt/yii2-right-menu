@@ -3,7 +3,7 @@
     -moz-box-sizing: border-box;
     box-sizing: border-box;
 }
-.right-menu {
+.vertical-menu {
 	z-index: 100;
 	left: -375px;
 	width: 450px;
@@ -12,7 +12,7 @@
 	top: 0;
 	bottom: 0;
 }
-.right-menu-block {
+.vertical-menu-block {
 	z-index: 100;
 	vertical-align: top;
 	height:100%;
@@ -20,7 +20,7 @@
 	width: 100%;
 	font-size: 0;
 }
-.right-menu .right-menu-show {
+.vertical-menu .vertical-menu-show {
 	background: #3d0047;
 	height: 100%;
 	width: 75px;
@@ -28,7 +28,7 @@
 	display: inline-block;
 	vertical-align: top;
 }
-.right-menu .right-menu-hide {
+.vertical-menu .vertical-menu-hide {
 	background: white ;
 	height: 100%;
 	overflow: auto;
@@ -38,7 +38,7 @@
 	display: inline-block;
 	font-size: 16px;
 }
-.right-menu .right-menu-show ul {
+.vertical-menu .vertical-menu-show ul {
 	margin: 0;
 	padding: 0;
 	position: absolute;
@@ -48,7 +48,7 @@
     overflow: auto;
     max-height: 300px;
 }
-.right-menu .right-menu-show ul li {
+.vertical-menu .vertical-menu-show ul li {
 	display: block;
 	background: #6A0088;
 	height: 75px;
@@ -57,39 +57,39 @@
 	color: white;
 	padding-top: 16px;
 }
-.right-menu .right-menu-show ul:nth-child(2) li:last-child {
+.vertical-menu .vertical-menu-show ul:nth-child(2) li:last-child {
 	background: #ed7600;
 	z-index: 50;
 	display: block;
 }
-.right-menu .right-menu-show ul li:hover {
+.vertical-menu .vertical-menu-show ul li:hover {
 	cursor: pointer;
 }
-.right-menu .right-menu-show ul:first-child {
+.vertical-menu .vertical-menu-show ul:first-child {
 	bottom: inherit;
 	top: 0;
 	z-index: 102;
 }
-.right-menu .right-menu-show ul:nth-child(2) {
+.vertical-menu .vertical-menu-show ul:nth-child(2) {
 	top: 75px;
 	margin: 0;
 	padding: 0;
 	list-style-type: none;
 }
-#menu-right-up {
+#menu-vertical-up {
 	display: none;
 }
-.right-menu-open {
-	animation: right-menu-close 0.5s infinite;
+.vertical-menu-open {
+	animation: vertical-menu-close 0.5s infinite;
 	animation-iteration-count: 1;
 	left: 0;
 }
-.right-menu-close {
-	animation: right-menu-open 0.5s infinite;
+.vertical-menu-close {
+	animation: vertical-menu-open 0.5s infinite;
 	animation-iteration-count: 1;
 	left: -375px;
 }
-@keyframes right-block-close {
+@keyframes vertical-block-close {
 	0% {
 		left: 0;
 	}
@@ -97,7 +97,7 @@
 		left: -45px;
 	}
 }
-@keyframes right-block-open {
+@keyframes vertical-block-open {
 	0% {
 		left: -45px;
 	}
@@ -105,7 +105,7 @@
 		left: 0;
 	}
 }
-@keyframes right-out-opacity-hide {
+@keyframes vertical-out-opacity-hide {
 	0% {
 		opacity: 0;
 	}
@@ -113,7 +113,7 @@
 		opacity: 1;
 	}
 }
-@keyframes right-out-opacity-show {
+@keyframes vertical-out-opacity-show {
 	0% {
 		opacity: 1;
 	}
@@ -121,52 +121,52 @@
 		opacity: 0;
 	}
 }
-.right-block-open {
-	animation: right-block-close 0.5s infinite;
+.vertical-block-open {
+	animation: vertical-block-close 0.5s infinite;
 	animation-iteration-count: 1;
 	left: -45px;
 }
-.right-block-close {
-	animation: right-block-open 0.5s infinite;
+.vertical-block-close {
+	animation: vertical-block-open 0.5s infinite;
 	animation-iteration-count: 1;
 	left: 0;
 }
-.right-out-opacity-show {
-	animation: right-out-opacity-show 1s infinite;
+.vertical-out-opacity-show {
+	animation: vertical-out-opacity-show 1s infinite;
 	animation-iteration-count: 1;
 	opacity: 0;
 }
-.right-out-opacity-hide {
-	animation: right-out-opacity-hide 1s infinite;
+.vertical-out-opacity-hide {
+	animation: vertical-out-opacity-hide 1s infinite;
 	animation-iteration-count: 1;
 	opacity: 1;
 }
-.right-menu .right-menu-hide {
+.vertical-menu .vertical-menu-hide {
 	color: white;
 	padding-top: 75px;
 	padding-bottom: 75px;
 }
-.right-menu .header-menu-right {
+.vertical-menu .header-menu-vertical {
 	height: 75px;
 	background: white;
-	padding-right: 40px;
+	padding-vertical: 40px;
 	position: absolute;
 	top: 0;
 	z-index: 101;
 	width: 86%;
 	padding-left: 25px;
 }
-.right-menu .header-menu-right div:first-child {
+.vertical-menu .header-menu-vertical div:first-child {
     font-size: 18px;
     font-weight: bold;
     margin-top: 15px;
 }
-.right-menu .header-menu-right div:last-child {
+.vertical-menu .header-menu-vertical div:last-child {
     font-size: 14px;
     color: gray;
     font-style: italic;
 }
-.right-menu .header-menu-right .item {
+.vertical-menu .header-menu-vertical .item {
 	height: 75px;
 	width: 75px;
 	min-height: inherit;
@@ -174,10 +174,10 @@
 	display: inline-block;
 	vertical-align: top;
 }
-.right-menu .header-menu-right .bug{
+.vertical-menu .header-menu-vertical .bug{
 	cursor: pointer;
 }
-.right-menu .header-menu-right .sign-out {
+.vertical-menu .header-menu-vertical .sign-out {
 	background: #128700;
 	font-size: 25px;
 	padding-top: 18px;
@@ -189,73 +189,73 @@
 	-ms-transform: rotate(-180deg);
 	-o-transform: rotate(-180deg);
 }
-.right-menu .header-menu-right .bug {
+.vertical-menu .header-menu-vertical .bug {
 	background: #00cfd6;
 	font-size: 25px;
 	padding-top: 16px;
 	text-align: center;
 }
-.right-menu .header-menu-right .sign-out:hover {
+.vertical-menu .header-menu-vertical .sign-out:hover {
 	cursor: pointer;
 }
-.right-menu .header-menu-right .image img {
+.vertical-menu .header-menu-vertical .image img {
 	height: 100%;
 }
-ul.right-menu-ul ul {
+ul.vertical-menu-ul ul {
 	margin: 0;
 	padding: 0;
 	display: none;
 }
-ul.right-menu-ul {
+ul.vertical-menu-ul {
 	margin: 0;
 	padding: 0;
 	color: white;
 }
-.right-menu-ul li {
+.vertical-menu-ul li {
 	display: block;
 	font-weight: bold;
 }
-.right-menu-ul li a {
+.vertical-menu-ul li a {
 	display: block;
 	padding: 14px 25px;
 	text-decoration: none;
 }
-.right-menu-ul li.active li a {
+.vertical-menu-ul li.active li a {
 	background: white;
 	color: #3d0047;
 }
-.right-menu-ul li a:hover {
+.vertical-menu-ul li a:hover {
 	background: #dcdcdc;
 }
-.right-menu-ul li li a:hover {
+.vertical-menu-ul li li a:hover {
 	background:  #dcdcdc;
 }
-.right-menu-ul li.active a {
+.vertical-menu-ul li.active a {
 	background: white;
 	color: #3d0047;
 }
-.right-menu-ul li a {
+.vertical-menu-ul li a {
 	border-top: 1px solid #3d0047;
 	color: #3d0047;
 }
-.right-menu-ul li li a {
+.vertical-menu-ul li li a {
 	border-left: 4px solid #3d0047;
 }
-.right-menu-ul li.active a {
+.vertical-menu-ul li.active a {
 	background:  #6A0088;
 	color: white;
 }
-.right-menu-ul li.active li.active a {
+.vertical-menu-ul li.active li.active a {
 	background:  #6A0088;
 	color: white;
 }
-.right-menu-ul li:last-child a {
+.vertical-menu-ul li:last-child a {
 	border-bottom: 1px solid #3d0047;
 }
-.right-menu-ul ul li:last-child a {
+.vertical-menu-ul ul li:last-child a {
 	border-bottom: 4px solid #3d0047;
 }
-.right-menu-ul ul li:first-child a {
+.vertical-menu-ul ul li:first-child a {
 	border-top: 5px solid #3d0047;
 }
 a[href="#"]:before { 
@@ -268,5 +268,5 @@ a[href="#"]:before {
     -moz-osx-font-smoothing: grayscale;
     position: relative;
     top: -3px;
-    margin-right: 5px;
+    margin-vertical: 5px;
 }

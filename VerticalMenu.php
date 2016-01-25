@@ -37,6 +37,6 @@ class VerticalMenu extends \yii\widgets\Menu
                 $this->itemsFront[$i]['optionsLink'] = [];
             }
         }
-		return  $this->getView()->render('@keygenqt/rightMenu/views/view', ['widget' => $this]);
+		return  $this->getView()->render('@keygenqt/verticalMenu/views/view', ['widget' => $this]);
     }
 }

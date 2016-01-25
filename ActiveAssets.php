@@ -9,13 +9,13 @@ use \yii\web\AssetBundle;
  */
 class ActiveAssets extends AssetBundle
 {
-	public $sourcePath = '@keygenqt/rightMenu/assets';
+	public $sourcePath = '@keygenqt/verticalMenu/assets';
 
 	public $js = [
-		'js/yii2-right-menu.js'
+		'js/yii2-vertical-menu.js'
 	];
 
 	public $css = [
-		'css/yii2-right-menu.css'
+		'css/yii2-vertical-menu.css'
 	];
 }
