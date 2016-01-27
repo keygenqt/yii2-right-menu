@@ -1,6 +1,6 @@
 <?php
 
-namespace keygenqt\imageAjax;
+namespace keygenqt\verticalMenu;
 
 use \yii\web\AssetBundle;
 
