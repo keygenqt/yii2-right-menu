@@ -13,7 +13,7 @@ class VerticalMenu extends \yii\widgets\Menu
 
     public function run()
 	{
-        BowerAssets::register($this->getView());
+        FontAwesomeAsset::register($this->getView());
         ActiveAssets::register($this->getView());
         
         for ($i = 0; $i<count($this->items); $i++) {
