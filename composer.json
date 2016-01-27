@@ -1,27 +1,27 @@
 {
-  "name": "keygenqt/yii2-vertical-menu",
-  "description": "Widget from form image ajax load.",
-  "keywords": ["yii2", "extension", "widget", "menu", "plugin"],
-  "homepage": "https://github.com/keygenqt/yii2-vertical-menu",
-  "type": "yii2-extension",
-  "license": "BSD-3-Clause",
-  "version":"0.5.0",
-  "authors": [
-    {
-      "name": "Vitaliy Zarubin",
-      "email": "keygenqt@gmail.com",
-      "homepage": "http://keygenqt.ru/",
-      "role": "Developer"
-    }
-  ],
-  "require": {
-    "php": ">=5.4.0",
-	"yiisoft/yii2": "*",
-	"bower-asset/Font-Awesome": "*"
-  },
-  "autoload": {
-    "psr-4": {
-      "keygenqt\\verticalMenu\\": ""
-    }
-  }
+	"name": "keygenqt/yii2-vertical-menu",
+	"description": "Widget from form image ajax load.",
+	"keywords": ["yii2", "extension", "widget", "menu", "plugin"],
+	"homepage": "https://github.com/keygenqt/yii2-vertical-menu",
+	"type": "yii2-extension",
+	"license": "BSD-3-Clause",
+	"version":"0.5.0",
+	"authors": [
+		{
+			"name": "Vitaliy Zarubin",
+			"email": "keygenqt@gmail.com",
+			"homepage": "http://keygenqt.ru/",
+			"role": "Developer"
+		}
+	],
+	"require": {
+		"php": ">=5.4.0",
+		"yiisoft/yii2": "*",
+		"bower-asset/Font-Awesome": "*"
+	},
+	"autoload": {
+		"psr-4": {
+			"keygenqt\\verticalMenu\\": ""
+		}
+	}
 }
