@@ -9,7 +9,7 @@ use \yii\web\AssetBundle;
  */
 class BowerAssets extends AssetBundle
 {
-	public $sourcePath = '@bower/font-awesome';
+	public $sourcePath = '@bower/fortawesome/font-awesome';
 
 	public $css = [
         'css/font-awesome.min',
