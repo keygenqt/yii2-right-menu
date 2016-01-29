@@ -72,7 +72,7 @@ The latest version of the module is v0.5.0 `BETA`.
 
 ## Screenshot
 
-![Alt text](https://raw.githubusercontent.com/keygenqt/yii2-vertical-menu/master/screenshot/close.png?raw=true "Close")
+![Alt text](https://raw.githubusercontent.com/keygenqt/yii2-vertical-menu/master/screenshot/close_1.png?raw=true "Close")
 ![Alt text](https://raw.githubusercontent.com/keygenqt/yii2-vertical-menu/master/screenshot/open.png?raw=true "Open")
 
 ## License
