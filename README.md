@@ -12,13 +12,7 @@ Either add
 ```
 "require": {
     "keygenqt/yii2-vertical-menu": "*"
-},
-"repositories":[
-    {
-        "type": "git",
-        "url": "https://github.com/keygenqt/yii2-vertical-menu.git"
-    }
-]
+}
 ```
 
 of your `composer.json` file.
@@ -30,60 +24,56 @@ The latest version of the module is v0.5.0 `BETA`.
 ## Usage
 
 ```php
-use \keygenqt\verticalMenu\VerticalMenu;
-
-VerticalMenu::widget([
-	'title' => 'Title',
-	'subtitle' => 'Subtitle',
-	'titleUrl' => ['site/index'],
-	'itemsFront' => [
-		[
-			'icon' => 'fa fa-github',
-			'color' => '#829AA8',
-			'url' => 'https://github.com/keygenqt',
-			'optionsLink' => [
-				'target' => '_blank'
-			]
-		], 
-		[
-			'url' => '/',
-			'icon' => 'fa fa-sign-out',
-			'color' => '#4C75A3',
-			'options' => [
-				'style' => '
-					-webkit-transform: rotate(-180deg); 
-					-moz-transform: rotate(-180deg);
-					-ms-transform: rotate(-180deg);
-					-o-transform: rotate(-180deg);'
-			],
-		], 
-	],
-	'items' => [
-		[
-			'label' => 'Yii2 ActiveRecord',
-			'items' => [
-				[
-					'label' => 'For Parse', 
-					'url' => ['yii2-active-record/parse'],
+<?= keygenqt\verticalMenu\VerticalMenu::widget([
+		'title' => 'My application',
+		'subtitle' => 'Admin panel',
+		'titleUrl' => ['site/index'],
+		'itemsFront' => [
+			[
+				'icon' => 'fa fa-sign-out',
+				'url' => ['site/logout'],
+				'color' => '#4C75A3',
+				'options' => [
+					'style' => '
+						padding-top: 18px;
+						-webkit-transform: rotate(-180deg); 
+						-moz-transform: rotate(-180deg);
+						-ms-transform: rotate(-180deg);
+						-o-transform: rotate(-180deg);'
 				],
-				[
-					'label' => 'For Vertica', 
-					'url' => ['yii2-active-record/vertica'],
+			], 
+		],
+		'items' => [
+			[
+				'label' => 'Statistics',
+				'items' => [
+					[
+						'label' => 'Dashboard',
+						'url' => ['site/dashboard'],
+					], 
+					[
+						'label' => 'Money',
+						'url' => ['site/money'],
+					], 
 				]
-			]
-		], 
-		[
-			'label' => 'Yii2 Components', 
-			'items' => [
-				[
-					'label' => 'VerticalMenu', 
-					'url' => ['yii2-components/menu'],
-				]
-			]
-		], 
-	]]);
-
+			], 
+			[
+				'label' => 'Users',
+				'url' => ['users/index'],
+			], 
+			[
+				'label' => 'Comments',
+				'url' => ['comments/index'],
+			],
+		]
+	]);
+?>
 ```
+
+## Screenshot
+
+![Alt text](https://raw.githubusercontent.com/keygenqt/yii2-vertical-menu/master/screenshot/close.png?raw=true "Close")
+![Alt text](https://raw.githubusercontent.com/keygenqt/yii2-vertical-menu/master/screenshot/open.png?raw=true "Open")
 
 ## License
 

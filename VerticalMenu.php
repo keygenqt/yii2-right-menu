@@ -2,6 +2,8 @@
 
 namespace keygenqt\verticalMenu;
 
+use \yii\base\Exception;
+
 class VerticalMenu extends \yii\widgets\Menu
 {
     public $titleUrl = [];
