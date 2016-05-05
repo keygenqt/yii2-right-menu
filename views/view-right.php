@@ -26,7 +26,7 @@
     <?php endif; ?>
 
     /** COLORS **/
-    body .vertical-menu-right-ul li.active a {
+    .vertical-menu-right-ul li.active a {
         background: <?= $widget->colorBtn ?>;
     }
     body .vertical-menu-right .vertical-menu-right-show ul li:first-child {

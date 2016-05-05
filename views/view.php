@@ -27,7 +27,7 @@
 
 
     /** COLORS **/
-    body .vertical-menu-ul li.active a {
+    .vertical-menu-ul li.active a {
         background: <?= $widget->colorBtn ?>;
     }
     body .vertical-menu .vertical-menu-show ul li:first-child {
