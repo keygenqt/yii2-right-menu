@@ -48,6 +48,7 @@
     body .vertical-menu-right-ul li a {
         border-top: none;
         border-bottom: 1px solid <?= $widget->colorBg ?>;
+        text-align: right;
     }
     body .vertical-menu-right-ul li.active li a {
         color: <?= $widget->colorBg ?>;
