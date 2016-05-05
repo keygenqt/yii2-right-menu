@@ -6,6 +6,7 @@ use \yii\base\Exception;
 
 class VerticalMenu extends \yii\widgets\Menu
 {
+    public $side = 'left';
     public $titleUrl = [];
     public $itemsFront = [];
     public $up = true;
@@ -16,8 +17,13 @@ class VerticalMenu extends \yii\widgets\Menu
     public function run()
 	{
         FontAwesomeAsset::register($this->getView());
-        ActiveAssets::register($this->getView());
-        
+
+        if ($this->side == 'left') {
+            ActiveAssets::register($this->getView());
+        } else if ($this->side == 'right') {
+            ActiveRightAssets::register($this->getView());
+        }
+
         for ($i = 0; $i<count($this->items); $i++) {
             if (empty($this->items[$i]['url'])) {
                 $this->items[$i]['url'] = '#';
@@ -39,6 +45,9 @@ class VerticalMenu extends \yii\widgets\Menu
                 $this->itemsFront[$i]['optionsLink'] = [];
             }
         }
-		return  $this->getView()->render('@keygenqt/verticalMenu/views/view', ['widget' => $this]);
+        if ($this->side == 'right') {
+            return  $this->getView()->render('@keygenqt/verticalMenu/views/view-right', ['widget' => $this]);
+        }
+        return  $this->getView()->render('@keygenqt/verticalMenu/views/view', ['widget' => $this]);
     }
 }

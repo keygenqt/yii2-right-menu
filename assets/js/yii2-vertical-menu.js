@@ -27,7 +27,7 @@ $(function() {
 	$('#menu-vertical-up').click(function(){
 		$('html,body').animate({ scrollTop: 0 }, 150);
 	});
-	$('a[href="#"]').click(function() {
+	$('.vertical-menu-ul a[href="#"]').click(function() {
 		$(this).parent().find('ul').slideToggle(150);
 		return false;
 	});
