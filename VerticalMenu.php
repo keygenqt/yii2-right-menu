@@ -14,6 +14,9 @@ class VerticalMenu extends \yii\widgets\Menu
     public $subtitle;
     public $width = 350;
 
+    public $colorBg = '#3d0047';
+    public $colorBtn = '#6A0088';
+
     public function run()
 	{
         FontAwesomeAsset::register($this->getView());

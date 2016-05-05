@@ -1,5 +1,5 @@
 <?php
-    /* @var $widget keygenqt\verticalMenu\RightMenu */
+    /* @var $widget keygenqt\verticalMenu\VerticalMenu */
     use \yii\helpers\Html;
 ?>
 
@@ -24,6 +24,53 @@
             cursor: pointer;
         }
     <?php endif; ?>
+
+
+    /** COLORS **/
+    body .vertical-menu-ul li.active a {
+        background: <?= $widget->colorBtn ?>;
+    }
+    body .vertical-menu .vertical-menu-show ul li:first-child {
+        background: <?= $widget->colorBtn ?>;
+        border-bottom: 1px solid <?= $widget->colorBg ?>;
+    }
+    body .vertical-menu .vertical-menu-hide {
+        padding-bottom: 0;
+    }
+    body .vertical-menu-ul li.active li.active a {
+        background: <?= $widget->colorBtn ?>;
+    }
+    body .vertical-menu .vertical-menu-show {
+        background: <?= $widget->colorBg ?>;
+    }
+    body .vertical-menu-ul ul li:first-child a {
+        border-top: 5px solid <?= $widget->colorBg ?>;
+    }
+    body .vertical-menu-ul li a {
+        border-top: none;
+        border-bottom: 1px solid <?= $widget->colorBg ?>;
+    }
+    body .vertical-menu-ul li.active li a {
+        color: <?= $widget->colorBg ?>;
+    }
+    body .vertical-menu-ul li a {
+        color: <?= $widget->colorBg ?>;
+    }
+    body .vertical-menu-ul li:last-child a {
+        border-bottom: 1px solid <?= $widget->colorBg ?>;
+    }
+    body .vertical-menu-ul li li a {
+        border-left: 4px solid <?= $widget->colorBg ?>;
+    }
+    body .vertical-menu .header-menu-vertical {
+        border-bottom: 1px solid <?= $widget->colorBg ?>;
+        border-top: 1px solid <?= $widget->colorBtn ?>;
+    }
+    body .vertical-menu-ul ul li:last-child a {
+        border-bottom: 4px solid <?= $widget->colorBg ?>;
+    }
+    /** COLORS **/
+
 </style>
 
 <div class="vertical-menu">
