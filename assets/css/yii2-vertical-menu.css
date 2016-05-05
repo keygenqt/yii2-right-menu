@@ -152,11 +152,10 @@ body {
 .vertical-menu .header-menu-vertical {
 	height: 75px;
 	background: white;
-	padding-vertical: 40px;
 	position: absolute;
 	top: 0;
 	z-index: 101;
-	width: 86%;
+	width: calc(100% - 75px);
 	padding-left: 25px;
 }
 .vertical-menu .header-menu-vertical div:first-child {

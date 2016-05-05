@@ -155,7 +155,7 @@ body {
 	position: absolute;
 	top: 0;
 	z-index: 101;
-	width: 79%;
+	width: calc(100% - 75px);
 	padding-right: 25px;
 	text-align: right;
 	right: 0;
