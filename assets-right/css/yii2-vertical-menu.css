@@ -155,20 +155,29 @@ body {
 	position: absolute;
 	top: 0;
 	z-index: 101;
-	width: 66%;
+	width: 79%;
 	padding-right: 25px;
 	text-align: right;
 	right: 0;
+	padding-left: 46px;
 }
 .vertical-menu-right .header-menu-right-vertical div:first-child {
     font-size: 18px;
     font-weight: bold;
     margin-top: 15px;
+	padding-left: 25px;
+	white-space: nowrap;
+	overflow: hidden;
+	text-overflow: ellipsis;
 }
 .vertical-menu-right .header-menu-right-vertical div:last-child {
     font-size: 14px;
     color: gray;
     font-style: italic;
+	padding-left: 25px;
+	white-space: nowrap;
+	overflow: hidden;
+	text-overflow: ellipsis;
 }
 .vertical-menu-right .header-menu-right-vertical .item {
 	height: 75px;
