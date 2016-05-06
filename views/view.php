@@ -99,9 +99,11 @@
                 </li>
             </ul>
             <ul>
-                <li id="menu-vertical-up">
-                    <i class="fa fa-chevron-up"></i>
-                </li>
+                <?php if ($widget->up): ?>
+                    <li id="menu-vertical-up">
+                        <i class="fa fa-chevron-up"></i>
+                    </li>
+                <?php endif; ?>
             </ul>
             
             <?php if (!empty($widget->itemsFront)): ?>

@@ -91,11 +91,13 @@
                     <i class="fa fa-bars"></i>
                 </li>
             </ul>
-            <ul>
-                <li id="menu-right-vertical-up">
-                    <i class="fa fa-chevron-up"></i>
-                </li>
-            </ul>
+                <ul>
+                    <?php if ($widget->up): ?>
+                        <li id="menu-right-vertical-up">
+                            <i class="fa fa-chevron-up"></i>
+                        </li>
+                    <?php endif; ?>
+                </ul>
 
             <?php if (!empty($widget->itemsFront)): ?>
                 <ul>
