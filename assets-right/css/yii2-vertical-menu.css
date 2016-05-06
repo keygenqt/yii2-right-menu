@@ -40,6 +40,7 @@ body {
 	width: calc(100% - 76px);
 	display: inline-block;
 	font-size: 16px;
+	direction: rtl;
 }
 .vertical-menu-right .vertical-menu-right-show ul {
 	margin: 0;
