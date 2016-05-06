@@ -163,7 +163,6 @@ body {
     font-weight: bold;
     margin-top: 15px;
 
-	padding-left: 25px;
 	white-space: nowrap;
 	overflow: hidden;
 	text-overflow: ellipsis;
@@ -173,7 +172,6 @@ body {
     color: gray;
     font-style: italic;
 
-	padding-left: 25px;
 	white-space: nowrap;
 	overflow: hidden;
 	text-overflow: ellipsis;
