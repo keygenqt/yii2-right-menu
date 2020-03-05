@@ -1,6 +1,6 @@
 {
 	"name": "keygenqt/yii2-vertical-menu",
-	"description": "Widget from form image ajax load.",
+	"description": "Widget menu.",
 	"keywords": ["yii2", "extension", "widget", "menu", "plugin"],
 	"homepage": "https://github.com/keygenqt/yii2-vertical-menu",
 	"type": "yii2-extension",
@@ -10,14 +10,14 @@
 		{
 			"name": "Vitaliy Zarubin",
 			"email": "keygenqt@gmail.com",
-			"homepage": "http://keygenqt.ru/",
+			"homepage": "http://keygenqt.com/",
 			"role": "Developer"
 		}
 	],
 	"require": {
 		"php": ">=5.4.0",
 		"yiisoft/yii2": "*",
-		"bower-asset/Font-Awesome": "*"
+		"bower-asset/font-awesome": "~5.1"
 	},
 	"autoload": {
 		"psr-4": {
