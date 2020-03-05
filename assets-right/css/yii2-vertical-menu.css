@@ -272,15 +272,3 @@ ul.vertical-menu-right-ul {
 .vertical-menu-right-ul ul li:first-child a {
 	border-top: 5px solid #3d0047;
 }
-.vertical-menu-right-ul  a[href="#"]:after {
-	content: "\f0dd";
-	display: inline-block;
-	font: normal normal normal 14px/1 FontAwesome;
-	font-size: inherit;
-	text-rendering: auto;
-	-webkit-font-smoothing: antialiased;
-	-moz-osx-font-smoothing: grayscale;
-	position: relative;
-	top: -3px;
-	margin-right: 5px;
-}

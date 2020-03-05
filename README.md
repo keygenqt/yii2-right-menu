@@ -45,7 +45,7 @@ The latest version of the module is v0.5.0 `BETA`.
 		],
 		'items' => [
 			[
-				'label' => 'Statistics',
+				'label' => '<i class="fas fa-caret-down"></i> Statistics',
 				'items' => [
 					[
 						'label' => 'Dashboard',

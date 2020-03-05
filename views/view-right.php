@@ -1,6 +1,8 @@
 <?php
-    /* @var $widget keygenqt\verticalMenu\VerticalMenu */
-    use \yii\helpers\Html;
+/* @var $widget keygenqt\verticalMenu\VerticalMenu */
+
+use yii\helpers\Html;
+
 ?>
 
 <style>
@@ -8,8 +10,11 @@
         right: -<?= $widget->width - 75; ?>px;
         width: <?= $widget->width; ?>px;
     }
+
     @keyframes vertical-menu-right-close {
-        0% { right: -<?= $widget->width - 75; ?>px; }
+        0% {
+            right: -<?= $widget->width - 75; ?>px;
+        }
         100% { right: 0; }
     }
     @keyframes vertical-menu-right-open {
@@ -116,6 +121,7 @@
 
         <div class="vertical-menu-right-hide">
             <?= \yii\widgets\Menu::widget([
+                'encodeLabels' => false,
                 'options' => [
                     'class' => 'vertical-menu-right-ul'
                 ],
