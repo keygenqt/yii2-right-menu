@@ -80,9 +80,6 @@ use yii\helpers\Html;
     body .vertical-menu-right-ul li:last-child a {
         border-bottom: 1px solid <?= $widget->colorBg ?>;
     }
-    body .vertical-menu-right-ul li li a {
-        border-left: 4px solid <?= $widget->colorBg ?>;
-    }
     body .vertical-menu-right .header-menu-right-vertical {
         border-bottom: 1px solid <?= $widget->colorBg ?>;
         border-top: 1px solid <?= $widget->colorBtn ?>;
