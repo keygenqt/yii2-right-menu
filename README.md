@@ -1,7 +1,7 @@
-yii2-vertical-menu
+[Vertical Menu](http://keygenqt.com/work/yii2-vertical-menu)
 ===================
 
-Menu takes a small amount of space with a comfortable functional. Made for my the admin panel on yii2.
+Vertical Menu right/left position for admin panel or other areas on yii2.
 
 ## Installation
 
@@ -11,72 +11,67 @@ Either add
 
 ```
 "require": {
-    "keygenqt/yii2-vertical-menu": "*"
+    "keygenqt/yii2-vertical-menu": "@dev"
 }
 ```
 
 of your `composer.json` file.
 
-## Latest Release
-
-The latest version of the module is v0.5.0 `BETA`.
-
 ## Usage
 
 ```php
-<?= keygenqt\verticalMenu\VerticalMenu::widget([
-		'title' => 'My application',
-		'subtitle' => 'Admin panel',
-		'titleUrl' => ['site/index'],
-		'itemsFront' => [
-			[
-				'icon' => 'fa fa-sign-out',
-				'url' => ['site/logout'],
-				'color' => '#4C75A3',
-				'options' => [
-					'style' => '
-						padding-top: 18px;
-						-webkit-transform: rotate(-180deg); 
-						-moz-transform: rotate(-180deg);
-						-ms-transform: rotate(-180deg);
-						-o-transform: rotate(-180deg);'
-				],
-			], 
-		],
-		'items' => [
-			[
-				'label' => '<i class="fas fa-caret-down"></i> Statistics',
-				'items' => [
-					[
-						'label' => 'Dashboard',
-						'url' => ['site/dashboard'],
-					], 
-					[
-						'label' => 'Money',
-						'url' => ['site/money'],
-					], 
-				]
-			], 
-			[
-				'label' => 'Users',
-				'url' => ['users/index'],
-			], 
-			[
-				'label' => 'Comments',
-				'url' => ['comments/index'],
-			],
-		]
-	]);
-?>
+echo \keygenqt\verticalMenu\VerticalMenu::widget([
+    'title' => 'KeyGenQt',
+    'subtitle' => 'Admin panel',
+    'titleUrl' => '#',
+    'width' => 350,
+    'side' => 'right',
+    'itemsFront' => [
+        [
+            'url' => '#',
+            'icon' => 'fas fa-sign-out-alt',
+            'color' => '#2cb6e9',
+            'options' => [
+                'style' => 'padding-top: 24px;'
+            ],
+        ],
+    ],
+    'items' => [
+        [
+            'label' => 'Dashboard',
+            'url' => '#',
+        ],
+        [
+            'label' => '<i class="fas fa-caret-down"></i> Multimedia',
+            'items' => [
+                [
+                    'label' => 'Music',
+                    'url' => '#',
+                    'active' => true
+                ],
+                [
+                    'label' => 'Video',
+                    'url' => '#',
+                ],
+                [
+                    'label' => 'Podcast',
+                    'url' => '#',
+                ],
+            ]
+        ],
+        [
+            'label' => '<i class="fas fa-caret-down"></i> Translations',
+            'items' => [
+                [
+                    'label' => 'Books',
+                    'url' => '#',
+                ],
+                [
+                    'label' => 'Post',
+                    'url' => '#',
+                ],
+            ]
+        ],
+    ]
+]);
 ```
-
-## Screenshot
-
-![Alt text](https://raw.githubusercontent.com/keygenqt/yii2-vertical-menu/master/screenshot/close.png?raw=true "Close")
-![Alt text](https://raw.githubusercontent.com/keygenqt/yii2-vertical-menu/master/screenshot/open.png?raw=true "Open")
-
-## License
-
-**yii2-vertical-menu** is released under the BSD 3-Clause License. See the bundled `LICENSE.md` for details.
-
-
