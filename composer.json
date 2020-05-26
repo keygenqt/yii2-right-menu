@@ -1,11 +1,11 @@
 {
 	"name": "keygenqt/yii2-vertical-menu",
-	"description": "Widget menu.",
+	"description": "Vertical Menu right/left position for admin panel or other areas on yii2",
 	"keywords": ["yii2", "extension", "widget", "menu", "plugin"],
-	"homepage": "https://github.com/keygenqt/yii2-vertical-menu",
+	"homepage": "https://keygenqt.com/work/yii2-vertical-menu",
 	"type": "yii2-extension",
-	"license": "BSD-3-Clause",
-	"version":"0.5.0",
+	"license": "Apache-2.0",
+	"version":"1.0.0",
 	"authors": [
 		{
 			"name": "Vitaliy Zarubin",
