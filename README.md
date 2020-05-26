@@ -11,7 +11,7 @@ Either add
 
 ```
 "require": {
-    "keygenqt/yii2-vertical-menu": "@dev"
+    "keygenqt/yii2-vertical-menu": "1.0.2"
 }
 ```
 
