@@ -1,4 +1,4 @@
-[Vertical Menu](http://keygenqt.com/work/yii2-vertical-menu)
+[Vertical Menu](https://keygenqt.com/work/yii2-vertical-menu)
 ===================
 
 ![GitHub](https://img.shields.io/github/license/keygenqt/yii2-autocomplete-ajax)
