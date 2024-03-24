@@ -1,7 +1,6 @@
 Vertical Menu
 ===================
 
-![GitHub](https://img.shields.io/github/license/keygenqt/yii2-autocomplete-ajax)
 ![Packagist Downloads](https://img.shields.io/packagist/dt/keygenqt/yii2-vertical-menu)
 
 Vertical Menu right/left position for admin panel or other areas on yii2.
