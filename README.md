@@ -1,7 +1,7 @@
 Vertical Menu
 ===================
 
-Packagist: ![Packagist Downloads](https://img.shields.io/packagist/dt/keygenqt/yii2-vertical-menu)
+![Packagist Downloads](https://img.shields.io/packagist/dt/keygenqt/yii2-vertical-menu?label=Packagist%20Downloads)
 
 Vertical Menu right/left position for admin panel or other areas on yii2.
 
